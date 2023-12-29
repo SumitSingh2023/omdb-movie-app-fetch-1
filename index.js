@@ -1,13 +1,13 @@
 let search=document.getElementById("search")
 let output=document.getElementById("display")
 let input=document.getElementById("searchBar")
-//let apiKey="6716a948"
+let apiKey="6716a948"
 
 
 
 search.addEventListener("click",async()=>{
     let movieName=input.value
-    let url=`http://www.omdbapi.com/?i=tt3896198&apikey=6716a948&t=${movieName}`
+    let url=`http://www.omdbapi.com/?i=tt3896198&apikey=${apiKey}&t=${movieName}`
 
     
     try{
